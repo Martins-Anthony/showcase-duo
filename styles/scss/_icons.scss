@@ -1,0 +1,23 @@
+.icon-add-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-add {
+  height: aspect-ratio(20vw);
+}
+
+@include respond-to("desktop") {
+  .icon-add {
+    height: px-to-rem(75);
+  }
+}
+
+@include respond-to("desktop-large") {
+  .icon-add {
+    height: px-to-rem(113);
+  }
+}

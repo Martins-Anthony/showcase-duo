@@ -1,0 +1,32 @@
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'mobile' {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == 'tablet' {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == 'desktop' {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $breakpoint == 'desktop-large' {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+@function aspect-ratio($value) {
+  $aspect-ratio: 9 / 16;
+  @return $value * $aspect-ratio;
+}
+
+@function px-to-rem($px-value) {
+  $base-font-size: 16;
+  @return ($px-value / $base-font-size) * 1rem;
+}
