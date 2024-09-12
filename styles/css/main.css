@@ -277,6 +277,9 @@
 .icon-add {
   height: 12.9375vw; }
 
+.heart {
+  color: #ba3939; }
+
 @media (min-width: 1024px) {
   .icon-add {
     height: 5.625rem; } }
@@ -293,6 +296,22 @@
 body {
   background-color: #F9F9F8; }
 
+header {
+  padding: 0.625rem 0; }
+
+footer {
+  background-color: #96969643;
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+  padding: 0.3125rem 0; }
+  footer a {
+    font-family: 'Shrikhand', 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    color: #000; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
 h1 {
   font-size: 9vw;
   font-family: 'Shrikhand', 'Roboto', sans-serif;
@@ -307,9 +326,7 @@ h2 {
 
 .main-container {
   max-width: 1440px;
-  width: 100%;
-  gap: 5vh;
-  padding: 3.5vw 6.5vw 3.5vw 6.5vw; }
+  padding: 3.5vw 0 5.5vw 0; }
 
 .col {
   display: flex;
@@ -342,6 +359,10 @@ h2 {
     font-size: 1.875rem; } }
 
 @media (min-width: 1024px) {
+  body {
+    height: 100vh; }
+  .main-container {
+    padding: 0vw 0 0vw 0; }
   #showcase-container {
     flex-direction: row;
     gap: 2vh; } }
