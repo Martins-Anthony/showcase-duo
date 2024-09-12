@@ -1,0 +1,52 @@
+.addPicture-btn {
+  background-color: $backgroundBtn;
+  color: $colorBtn;
+  border-radius: px-to-rem(50);
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 500;
+  align-content: center;
+}
+
+.picture-input-file {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.btn-add {
+  &:hover {
+    background: $desktopSecondary;
+    cursor: pointer;
+  }
+}
+
+#image-preview-mobile {
+  object-fit: cover;
+  border-radius: 4vw;
+}
+
+@include respond-to("desktop") {
+  .addPicture-btn {
+    font-size: px-to-rem(18);
+    padding: px-to-rem(7) px-to-rem(14);
+  }
+  
+  #image-preview-mobile {
+    border-radius: px-to-rem(15);
+  }
+}
+
+@include respond-to("desktop-large") {
+  .addPicture-btn {
+    font-size: px-to-rem(27.5);
+    padding: px-to-rem(10) px-to-rem(20);
+  }
+
+  #image-preview-mobile {
+    border-radius: px-to-rem(20);
+  }
+}

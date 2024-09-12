@@ -1,6 +1,4 @@
 #desktop {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -9,6 +7,7 @@
   height: aspect-ratio(1vw);
   background-color: $desktopOutline;
   border-radius: 0 0 1vw 1vw;
+  box-shadow: $shadow;
 }
 
 .desktop-keyboard {
@@ -16,8 +15,8 @@
   height: aspect-ratio(5vw);
   background-color: $desktopSecondary;
   border-radius: 0 0 1vw 1vw;
-  display: flex;
   justify-content: center;
+  box-shadow: $shadow;
   &-notch {
     background-color: $desktopOutline;
     width: 15%;
@@ -36,19 +35,13 @@
 }
 
 .desktop-screen-outline {
-  width: 100%;
-  height: 100%;
   background-color: $primary;
   border-radius: 2vw 2vw 0 0;
   padding: 2.5vw 2vw 3vw 2vw;
 }
 
 .desktop-screen {
-  height: 100%;
   background-color: $backgroundScreen;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @include respond-to("desktop") {

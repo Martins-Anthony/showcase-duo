@@ -1,18 +1,5 @@
 #mobile {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: aspect-ratio(150vw);
-}
-
-#mobile-container {
-  display: flex;
-  justify-content: center;
-}
-
-.mobile-side-btn-group {
-  display: flex;
-  flex-direction: column;
 }
 
 .mobile-btn {
@@ -45,6 +32,7 @@
 .mobile-outline {
   width: 43vw;
   border: 0.5vw solid $mobileOutline;
+  box-shadow: $shadow;
 }
 
 .mobile-outline-radius {
@@ -58,21 +46,18 @@
 .mobile-container-screen {
   border: 2vw solid $primary;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   background-color: $backgroundScreen;
 }
 
 .mobile-island {
+  position: absolute;
   height: aspect-ratio(5vw);
-  width: 56%;
+  width: 25%;
   background-color: $primary;
   border-bottom-left-radius: 5vw;
   border-bottom-right-radius: 5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
   .color-notch {
     background-color: $mobileNotch;
   }
@@ -92,27 +77,26 @@
 
 @include respond-to("desktop") {
   #mobile {
-    max-width: px-to-rem(234);
-    max-height: px-to-rem(464);
+    height: px-to-rem(464);
   }
 
   .mobile-btn {
-    max-width: px-to-rem(2.7);
+    width: px-to-rem(2.7);
   }
 
   .mobile-btn-one {
-    max-height: px-to-rem(19);
+    height: px-to-rem(19);
     margin-top: px-to-rem(60);
     margin-bottom: px-to-rem(13);
   }
 
   .mobile-btn-two {
-    max-height: px-to-rem(36);
+    height: px-to-rem(36);
     margin-bottom: px-to-rem(7);
   }
 
   .mobile-btn-three {
-    max-height: px-to-rem(56);
+    height: px-to-rem(56);
     margin-top: px-to-rem(104);
   }
   
@@ -126,6 +110,7 @@
  
   .mobile-outline {
     border: px-to-rem(1.5) solid $mobileOutline;
+    width: px-to-rem(234);
   }
 
   .mobile-outline-radius {
@@ -142,19 +127,19 @@
 
   .mobile-island {
     height: px-to-rem(14);
-    max-width: 58%;
+    width: px-to-rem(118);
     border-radius: 0 0 px-to-rem(14) px-to-rem(14);
 
     .notch-one {
-      max-width: 26%;
-      max-height: px-to-rem(4.5);
+      width: px-to-rem(31.5);
+      height: px-to-rem(4.5);
       border-radius: px-to-rem(16.5);
       margin-right: px-to-rem(8.5);
       margin-left: px-to-rem(8.5);
     }
     .notch-two {
-      max-width: px-to-rem(6);
-      max-height: px-to-rem(6);
+      width: px-to-rem(6);
+      height: px-to-rem(6);
       border-radius: 100%;
     }
   }
@@ -162,8 +147,7 @@
 
 @include respond-to("desktop-large") {
   #mobile {
-    max-width: 330px;
-    max-height: 652px;
+    height: px-to-rem(652);
   }
 
   .mobile-btn {
@@ -171,18 +155,18 @@
   }
 
   .mobile-btn-one {
-    max-height: px-to-rem(27.5);
+    height: px-to-rem(27.5);
     margin-top: px-to-rem(84);
     margin-bottom: px-to-rem(19);
   }
 
   .mobile-btn-two {
-    max-height: px-to-rem(50);
+    height: px-to-rem(50);
     margin-bottom: px-to-rem(10);
   }
 
   .mobile-btn-three {
-    max-height: px-to-rem(80);
+    height: px-to-rem(80);
     margin-top: px-to-rem(146);
   }
   
@@ -196,6 +180,7 @@
  
   .mobile-outline {
     border: px-to-rem(2.5) solid $mobileOutline;
+    width: px-to-rem(330);
   }
 
   .mobile-outline-radius {
@@ -212,11 +197,11 @@
 
   .mobile-island {
     height: px-to-rem(20);
-    width: 58%;
+    width: px-to-rem(166);
     border-radius: 0 0 px-to-rem(20) px-to-rem(20);
 
     .notch-one {
-      width: 26%;
+      width: px-to-rem(44);
       height: px-to-rem(6);
       border-radius: 2vw;
       margin-right: px-to-rem(12.5);
