@@ -6,6 +6,7 @@ export function adaptIdsForDevice(device) {
   container.find('.picture-input-file').attr('id', `picture-${prefix}`);
   container.find('.image-preview').attr('id', `image-preview-${prefix}`);
   container.find(`.addPicture-btn`).attr('for', `picture-${prefix}`).attr('id', `AddPictureBtn-${prefix}`);
+  container.find(`.container-picture`).attr('id', `container-picture-${prefix}`);
 }
 
 export function handlePictureUpload(device) {

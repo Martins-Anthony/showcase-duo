@@ -9,24 +9,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <title>Showcase duo</title>
+  <link rel="icon" type="image/ico" sizes="32x32" href="assets/icon_sd.ico">
   <link rel="stylesheet" type="text/css" href="styles/css/main.css">
 </head>
 
 <body class="col centered">
   <header>
-    <h1>Showcase duo</h1>
+    <h1 class="logo"></h1>
     <h2>Simply create your showcase for mobile and desktop</h2>
   </header>
   <main class="col centered main-container h-100">
-    <div id="showcase-container" class="col centered">
-      <div id="mobile-container"></div>
-      <div id="desktop-container"></div>
+    <div id="capture" class="col capture">
+      <div id="showcase-container" class="col centered">
+        <div id="mobile-container"></div>
+        <div id="desktop-container"></div>
+      </div>
     </div>
+    <div id="capture-btn" class="col centered">
+      <button id="screenshot-btn" class="addPicture-btn btn-add btn">
+        Screenshot
+      </button>
+
   </main>
   <footer class="w-100 row centered">
-    <a href="https://github.com/Martins-Anthony">Made with <span class="heart">&#9829;</span> by Anthony Martins</a>
+    <a href="https://github.com/Martins-Anthony" class="github-link" title="github link from Anthony Martins">Made with
+      <span class="heart">&#9829;</span> by Anthony Martins</a>
+      <img src="assets/github-character.png" alt="icon github" class="icon-github">
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/browser-image-compression@1.0.15/dist/browser-image-compression.js"></script>
   <script type="module" src="js/app.js"></script>
 </body>
 

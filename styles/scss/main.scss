@@ -1,17 +1,21 @@
 @import "./colors";
 @import "./mixins";
+@import "./footerLinkAnimation";
 
 $shadow: 0 px-to-rem(4) px-to-rem(8) 0 rgba(0, 0, 0, 0.2);
+$fontFamilyTitle: "Shrikhand", "Roboto", sans-serif;
 
+@import "../../components/logo/logo";
 @import "../../components/mobile/mobile";
 @import "../../components/desktop/desktop";
 @import "../../components/addPicture/addPicture";
+@import "../../components/modal/modal";
 
 @import "./icons";
 
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -27,24 +31,17 @@ footer {
   background-color: $backgroundFooter;
   box-shadow: $shadow;
   padding: px-to-rem(5) 0;
+  z-index: 1;
   a {
-    font-family: 'Shrikhand', 'Roboto', sans-serif;
+    font-family: $fontFamilyTitle;
     font-size: px-to-rem(14);
     color: $primary;
   }
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
-}
-
-h1 {
-  font-size: 9vw;
-  font-family: 'Shrikhand', 'Roboto', sans-serif;
-  color: $desktopSecondary;
-  margin: 0;
-  text-align: center;
+  color: inherit;
+  text-decoration: none;
 }
 
 h2 {
@@ -87,12 +84,24 @@ h2 {
 
 #showcase-container {
   gap: 5vh;
+  margin-bottom: 5vh;
+}
+
+.capture {
+  p {
+    font-family: $fontFamilyTitle;
+    font-size: px-to-rem(12);
+    color: $backgroundScreen;
+  }
+}
+
+@include respond-to("mobile") {
+  body {
+    height: 100vh;
+  }
 }
 
 @include respond-to("tablet") {
-  h1 {
-    font-size: px-to-rem(70);
-  }
   h2 {
     font-size: px-to-rem(30);
   }
@@ -110,11 +119,12 @@ h2 {
   #showcase-container {
     flex-direction: row;
     gap: 2vh;
+    margin-bottom: 2vh;
   }
 }
 
 @include respond-to("desktop-large") {
   .main-container {
-    padding: 3.5vw 0 3.5vw 0;
+    padding: 2.5vw 0 1.5vw 0;
   }
 }

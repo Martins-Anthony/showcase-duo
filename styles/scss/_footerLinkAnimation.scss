@@ -1,0 +1,33 @@
+
+.icon-github {
+  position: absolute;
+  clip-path: inset(0 0 36% 0);
+  width: 0;
+  z-index: -10;
+  opacity: 0;
+}
+
+@keyframes moveGitHub {
+  90% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  95% {
+    transform: translateY(25%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-24%) scale(1);
+    width: 170px;
+    opacity: 1;
+  }
+}
+
+.github-link:hover + .icon-github {
+  animation: moveGitHub 0.4s ease-in-out forwards;
+  clip-path: inset(0 0 36% 0);
+}
+
+.github-link:hover {
+  color: $colorBtn;
+}

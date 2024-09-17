@@ -1,0 +1,39 @@
+.logo {
+  color: #222;
+  margin: 0;
+  z-index: 1;
+  letter-spacing: -0.15rem;
+  font-size: 9vw;
+  text-align: center;
+}
+
+.letter {
+  font-family: $fontFamilyTitle;
+  color: $colorBtn;
+  margin: 0;
+  animation: moveLogo 2s linear;
+}
+
+@keyframes moveLogo {
+  0% {
+    color: #d3d3d3;
+  }
+  90% {
+    color: $colorBtn;
+  }
+  100% {
+    color: #d3d3d3;
+  }
+}
+
+@for $i from 1 through 20 {
+  .letter:nth-child(#{$i}) {
+    animation-delay: 0.1s * $i;
+  }
+}
+
+@include respond-to("tablet") {
+  .logo {
+    font-size: px-to-rem(70);
+  }
+}
