@@ -1,8 +1,16 @@
-# Showcase Duo
+# Showcase duo
+
+## Aperçu du projet
+
+![Aperçu Showcase duo](assets/screenshot.png)
 
 ## Description du projet
 
 Showcase duo est une application web permettant de générer des captures d'écran combinant l'affichage d'un téléphone et d'un ordinateur dans une seule image optimisée, que l'utilisateur peut télécharger.
+
+## Démo en ligne
+
+[Showcase duo sur GitHub Pages](https://martins-anthony.github.io/showcase-duo/)
 
 ## Fonctionnalités
 
@@ -53,7 +61,7 @@ Showcase duo est une application web permettant de générer des captures d'écr
 
 ## Auteur
 
-- **Martins Anthony** - [![Portfolio](https://img.shields.io/badge/Portfolio-webcraft--anthony.com-blueviolet?style=for-the-badge&logo=internet-explorer&logoColor=white)](http://webcraft-anthony.com)  [![GitHub](https://img.shields.io/badge/GitHub-Martins--Anthony-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Martins-Anthony)
+[![Portfolio](https://img.shields.io/badge/Portfolio-webcraft--anthony.com-blueviolet?style=for-the-badge&logo=internet-explorer&logoColor=white)](http://webcraft-anthony.com)  [![GitHub](https://img.shields.io/badge/GitHub-Martins--Anthony-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Martins-Anthony)
 
 ## Licence
 
